@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="../../JS/home.js" defer></script>
+    <script src="JS/deposito.js" defer></script>
+    <script src="../../JS/transacao.js" defer></script>
+
+    <link rel="stylesheet" href="../../CSS/home.css">
+    <title>Home</title>
+</head>
+<menu class="menu">
+    <nav class="navbar navbar-expand-custom navbar-mainbg">
+        <a class="navbar-brand navbar-logo">GG's</a>
+        <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <i class="fas fa-bars text-white"></i>
+
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <div class="hori-selector">
+                    <div class="left"></div>
+                    <div class="right"></div>
+                </div>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/conta"><i class="fa-solid fa-wallet"></i>Conta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/deposito"><i
+                            class="fa-solid fa-money-bill-wave"></i>Despósito</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/transacao"><i
+                            class="fa-solid fa-money-bill-transfer"></i>Transferência</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);"><i class="far fa-calendar-alt"></i>Calendario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0);"><i class="far fa-copy"></i>Documento</a>
+                </li>
+            </ul>
+
+        </div>
+        <a class="navbar-brand text-end" th:text="'Seu Saldo é: R$' + ${usuario.dinheiro}"></a>
+    </nav>
+</menu>
+<body>
+<div class="container">
+
+</div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../CSS/Cadastro_Usuario.css">
+    <script src="JS/Cadastro_Usuario.js" defer></script>
+    <title>Cadastrar</title>
+</head>
+
+<body>
+<div class="container" id="container">
+    <div class="content1  sign-in-container">
+        <form>
+            <h2 class="tituloForm1">Login</h2>
+            <p class="texto">Ou faça o login com os dados criados aqui</p>
+            <label class="label-input">
+                <i class="far fa-envelope icon-modificado"></i>
+                <input type="text" id="cpfLogar" placeholder="CPF">
+            </label>
+            <label class="label-input">
+                <i class="fas fa-lock icon-modificado"></i>
+                <input type="password" id="senhaLogar" placeholder="Senha">
+            </label>
+            <a class="btn btnLogin1" id="enviarLogin" type="submit">Login</a>
+        </form>
+    </div>
+    <div class="content1 sign-up-container">
+        <form>
+            <h2 class="tituloForm2">Crie sua Conta</h2>
+            <p class="texto">Crie use seu e-mail para se cadastrar</p>
+            <label class="label-input">
+                <i class="fa-solid fa-user"></i>
+                <input id="nome" type="text" placeholder="Nome">
+            </label>
+            <label class="label-input">
+                <i class="fa-regular fa-envelope"></i>
+                <input id="email" type="text" placeholder="E-mail">
+            </label>
+            <label class="label-input">
+                <i class="fa-solid fa-passport"></i>
+                <input id="cpf" type="text" placeholder="CPF">
+            </label>
+            <label class="label-input">
+                <i class="fa-solid fa-phone"></i>
+                <input id="telefone" type="text" placeholder="Telefone">
+            </label>
+            <label class="label-input">
+                <i class="fa-solid fa-calendar-days"></i>
+                <input id="datanasc" type="date" placeholder="Data de Nascimento">
+            </label>
+            <label class="label-input">
+                <i class="fa-solid fa-lock"></i>
+                <input id="senha" type="password" placeholder="Senha">
+            </label>
+            <a id="enviarCadastro" class="btn btnCadastro1" type="submit">Cadastrar</a>
+        </form>
+    </div>
+
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="content2 contentEsq">
+                <h2 class="tituloInform">Bem vindo, novamente!</h2>
+                <p class="texto2">Se você ja tem uma conta faça o seu login</p>
+
+                <button class="btn2 btnLogin2" id="signIn">Entrar</button>
+            </div>
+            <div class="content2 contentDir">
+                <h2 class="tituloInform">Olá, novo Amigo</h2>
+                <p class="texto2">Cadastre-se com seu e-mail para se juntar a nós</p>
+                <button class="btn2 btnCadastro2" id="signUp" ></span>Cadastro</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

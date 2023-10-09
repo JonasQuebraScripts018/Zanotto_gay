@@ -1,0 +1,47 @@
+<body>
+<div class="container mt-5">
+    <h1>Transação</h1>
+    <div class="input-group mb-3 ">
+        <span style="border: none; border: solid 2px #0d009c; border-radius: 10px" class="input-group-text" id="basic-addon2">CPF</span>
+        <input style="border: none; border: solid 2px #0d009c; border-radius: 10px" type="text" id="cpf" class="form-control" placeholder="Digite o seu cpf" aria-label="cpf" aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group mb-3 ">
+        <span style="border: none; border: solid 2px #0d009c; border-radius: 10px" class="input-group-text" id="basic-addon">Senha</span>
+        <input style="border: none; border: solid 2px #0d009c; border-radius: 10px" type="number" id="senha" class="form-control" placeholder="Digite sua senha" aria-label="cpf" aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group mb-3 ">
+    <span style="border: none; border: solid 2px #0d009c; border-radius: 10px" class="input-group-text" id="basic-addon1">$</span>
+    <input style="border: none; border: solid 2px #0d009c; border-radius: 10px" type="number" id="valorTransacao" class="form-control" placeholder="Valor da Transação" aria-label="deposito" aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group mb-3 ">
+        <span style="border: none; border: solid 2px #0d009c; border-radius: 10px" class="input-group-text" id="basic">Cpf do receptaculo</span>
+        <input style="border: none; border: solid 2px #0d009c; border-radius: 10px" type="number" class="form-control" placeholder="Cpf do receptaculo" aria-label="cpf" aria-describedby="basic-addon1">
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+            Conta Corrente
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <label class="form-check-label" for="flexRadioDefault2">
+            Conta Salário
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+        <label class="form-check-label" for="flexRadioDefault3">
+            Conta Pagamento
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked>
+        <label class="form-check-label" for="flexRadioDefault4">
+            Conta Poupança
+        </label>
+    </div>
+
+    <button type="submit" id="enviar" class="btn btn-success text-center">Depositar</button>
+</div>
+</body>
